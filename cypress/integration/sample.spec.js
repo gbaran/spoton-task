@@ -1,3 +1,6 @@
+import { searchButton, searchInputField } from '../web-elements/header/header'
+
 it('basic setup', () => {
-  const d = 'asd'
+  searchInputField().type('shirt')
+  searchButton().click()
 })
