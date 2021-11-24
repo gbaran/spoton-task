@@ -1,0 +1,26 @@
+.DS_Store
+/.bower-cache
+/.bower-registry
+/.bower-tmp
+/.sass-cache
+/.idea
+/node_modules
+/dist
+/tmp
+/.bundle
+/*.sublime-project
+/*.sublime-workspace
+npm-debug.log
+testem.log
+/.vscode/settings.json
+
+# For billy-deployer
+/billy-builder.json
+/billy-builder.js
+# IntelliJ
+*.iml
+lerna-debug.log
+cypress.json
+cypress/screenshots
+cypress/videos
+cypress/logs

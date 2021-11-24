@@ -1,10 +1,10 @@
 {
-    "baseUrl": "http://automationpractice.com/index.php",
-    "video": false,
-    "testFiles": "**/*spec.js",
-    "defaultCommandTimeout": 6000,
-    "retries": {
-      "runMode": 2,
-      "openMode": 1
-    }
+  "baseUrl": "http://automationpractice.com/index.php",
+  "video": false,
+  "testFiles": "**/*spec.js",
+  "defaultCommandTimeout": 8000,
+  "retries": {
+    "runMode": 2,
+    "openMode": 1
+  }
 }

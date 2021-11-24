@@ -20,6 +20,6 @@ import './commands'
 // require('./commands')
 
 beforeEach(() => {
-    cy.viewport('macbook-15')
-    cy.visit('/')
+  cy.viewport(1920, 1080)
+  cy.visit('/')
 })
