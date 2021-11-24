@@ -1,0 +1,27 @@
+{
+  "name": "spoton-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^9.0.0"
+  },
+  "devDependencies": {
+    "prettier": "2.4.1"
+  },
+  "scripts": {
+    "cy:run": "npx cypress run",
+    "cy:open": "npx cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gbaran/spoton-task.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gbaran/spoton-task/issues"
+  },
+  "homepage": "https://github.com/gbaran/spoton-task#readme"
+}

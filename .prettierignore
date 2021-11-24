@@ -1,0 +1,8 @@
+/dist
+/build
+/public
+/node_modules
+/tools
+/.storybook
+/web-component
+*.hbs
