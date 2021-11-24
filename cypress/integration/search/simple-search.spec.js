@@ -1,9 +1,9 @@
 import {
-  firstSearchResultItemName,
-  firstSearchResultItemPrice,
-  searchResultItem,
-  searchResultList,
-} from '../../web-elements/search-result/search-result'
+  firstProductName,
+  firstProductPrice,
+  productList,
+  productListItem,
+} from '../../web-elements/product/product-list'
 import {
   productImage,
   productName,
@@ -12,7 +12,7 @@ import {
 import {
   searchButton,
   searchInputField,
-} from '../../web-elements/header/header'
+} from '../../web-elements/dashboard/header'
 
 import { getElementTextValue } from '../../support/utils/general'
 
@@ -23,14 +23,14 @@ describe('recruitment task for spotOn', () => {
     searchButton().click()
 
     // validate search result list
-    searchResultList().should('exist')
+    productList().should('exist')
 
     // save some values to compare (first 'shirt' search result)
-    getElementTextValue(firstSearchResultItemName, 'productName')
-    getElementTextValue(firstSearchResultItemPrice, 'productPrice')
+    getElementTextValue(firstProductName, 'productName')
+    getElementTextValue(firstProductPrice, 'productPrice')
 
     // proceed to the first 'shirt' search result
-    searchResultItem()
+    productListItem()
       .first()
       .trigger('mouseover')
       .then(() => {

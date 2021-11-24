@@ -1,3 +1,7 @@
+export function checkNewUrlToContain(url) {
+  cy.shouldUrlContain(url)
+}
+
 export const getElementAttributeValue = (
   element,
   attributeName,
