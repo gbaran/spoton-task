@@ -18,20 +18,18 @@ describe('best sellers tests', () => {
 
     // validate price sorting
     productList().within(() => {
-      var initialList = []
+      let initialList = []
 
       productPrice()
         .each(($cell) => {
-          var listElementString = $cell
+          const listElementString = $cell
             .text()
             .trim()
             .replace(/[^0-9\.]+/g, '')
           initialList.push(listElementString)
         })
         .then(() => {
-          var sortedList = [...initialList].sort(function (a, b) {
-            return b - a
-          })
+          const sortedList = [...initialList].sort((a, b) => b - a)
           expect(initialList).to.be.deep.equal(sortedList)
         })
     })

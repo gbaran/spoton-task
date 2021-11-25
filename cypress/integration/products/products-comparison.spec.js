@@ -47,6 +47,7 @@ describe('product comparison tests', () => {
         compareButtonCounter().contains(1).should('be.visible')
       })
 
+    // go to compare screen and check for both products
     compareButton().first().click()
     productBlock().should('be.visible').and('have.length', 2)
     cy.get('@firstProductName').then(($name) => {
