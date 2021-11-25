@@ -1,7 +1,7 @@
 import {
   addToCartButton,
-  searchResultItem,
-} from '../../web-elements/search-result/search-result'
+  productListItem,
+} from '../../web-elements/product/product-list'
 import {
   checkoutCartItem,
   checkoutCartQuantityIncrease,
@@ -21,7 +21,7 @@ import {
 import {
   searchButton,
   searchInputField,
-} from '../../web-elements/header/header'
+} from '../../web-elements/dashboard/header'
 
 import { getElementAttributeValue } from '../../support/utils/general'
 
@@ -30,7 +30,7 @@ describe('add to cart tests', { scrollBehavior: false }, () => {
     // search for shirt and add it to cart
     searchInputField().type('shirt')
     searchButton().click()
-    searchResultItem()
+    productListItem()
       .first()
       .trigger('mouseover')
       .within(() => {
@@ -53,7 +53,7 @@ describe('add to cart tests', { scrollBehavior: false }, () => {
     // search for dress and add it to cart
     searchInputField().clear().type('dress')
     searchButton().click()
-    searchResultItem()
+    productListItem()
       .first()
       .trigger('mouseover')
       .within(() => {
